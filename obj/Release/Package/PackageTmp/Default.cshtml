@@ -1,0 +1,81 @@
+﻿@{
+    Page.Title = "Rare UpCycle";
+}
+
+
+<div class="container">
+    <hgroup class="title">
+        <h1>@Page.Title</h1>
+        <br />
+        <h2>Repurposing what the others have long forgotten.</h2>
+    </hgroup>
+    <p>
+        At Rare UpCycle we aim to take products of old, and make them the center of attention. By mixing innovation,
+        creativity and passion we have made a wonderful receipe for devlivering unique items not found anywhere else.
+        Our products can be found in two locations. At the <a href="http://www.spire-web.com">
+            Red Door Mall
+        </a> and
+        <a href="http://warehouseoneantiques.com">Warehouse One Antiques</a>.
+    </p>
+    <div class="buttonHolder" style="display: flex; justify-content: center; cursor:pointer">
+        <a onclick="document.getElementById('id01').style.display='block'" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal">Hours</a>
+    </div>
+</div>
+<div id="myModal" class="modal">
+    <p>This is the contents of the container.</p>
+</div>
+
+Red Door Mall,  6837 Lake Michigan Drive,  Allendale,  MI 49401 phone (616) 895-2667
+
+WAREHOUSE ONE 449 CENTURY AVE SW, GRANDRAPIDS. MI. 49503
+HOURS MON THRU SATURDAY 10 AM TO 6 PM
+SUNDAY 12 TO 5 PM
+Hours for Red Door  Tues thru Friday 11 am to 6 pm, saturday 11 am until 4 pm,  closed Sunday and Monday
+Cleaning pays, Sarah just found a $10 gift card for Meijer from her parents Christmas.
+Party
+
+<div id="id01" class="modal">
+    <!--Modal Content-->
+    <form id="popUp" class="modal-content animate" action="">
+        <button onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">X</button>
+        <br>
+       <div class="container" style="margin: 0 auto;">
+           <div class="buttonHolder">
+               <img src="Images/rareUpcycle.png" style="height: 115px; width: 150px; border-radius: 0; margin: 10px auto 0 auto;" alt="Logo" class="logo">
+           </div>
+        </div>
+        <div class="container container1" style="width: auto">
+            <div class="buttonHolder">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="col-xs-6">
+                            <h2>Red Door Mall</h2>
+                            <p>6837 Lake Michigan Dr.<br />
+                            <p>Allendal, MI 494XX</p>
+                            <h3>Phone:</h3>
+                            <p>616.895.2667</p>
+                            <h5><b>Hours:</b></h5>
+                            <p><b>Tues-Fri: </b>11a-6p</p>
+                            <p><b>Sat: </b>11a-4p</p>
+                        </div>
+                        <div class="col-xs-6">
+                            <h2>Wharehouse One</h2>
+                            <p>449 Century Ave SW<br />
+                            <p>Grand Rapids, MI 49503</p>
+                            <h3>Phone:</h3>
+                            <p>231.557.3649</p>
+                            <h5><b>Hours:</b></h5>
+                            <p><b>Mon-Sat: </b>10a-6p</p>
+                            <p><b>Sun: </b>12a-5p</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="container container2" style="width: auto">
+                <div class="buttonHolder"></div>
+            </div>
+            <br>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,102 @@
+﻿@using Microsoft.AspNet.Identity
+@using Microsoft.AspNet.Identity.EntityFramework
+@using Microsoft.Owin.Security
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>@Page.Title Rare UpCycle</title>
+    @*<link href="~/Content/themes/base/jquery.ui.all.css" rel="stylesheet" type="text/css" />*@
+    <link href="~/Content/bootstrap.css" rel="stylesheet" type="text/css" />
+    @*<link href="~/Content/Site.css" rel="stylesheet" type="text/css" />*@
+    <link href="~/Content/main.css" rel="stylesheet" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    @*<script src="~/Scripts/jquery-ui-1.10.3.js"></script>*@
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <meta name="viewport" content="width=device-width" />
+</head>
+<body>
+    
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand pull-left" href="#">
+                    <img alt="Brand" src="...">
+                </a>
+                <ul class="nav navbar-nav float-right" id="navlist">
+                    <li class="active"><a href="Default.cshtml">Home</a></li>
+                    <li><a href="Page2.html">Page2</a></li>
+                    <li><a href="Page3.html">Page3</a></li>
+                    <li><a href="Contact.cshtml">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+@*<header>
+        </header>*@
+
+    @*<section id="login">
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <text>
+                        Hello, <a class="btn btn-danger btn-md email" href="~/Account/Manage" title="Manage">@User.Identity.GetUserName()</a>!
+                        <form id="logoutForm" action="~/Account/Logout" method="post">
+                            @AntiForgery.GetHtml()
+                            <a href="javascript:document.getElementById('logoutForm').submit()">Log out</a>
+                        </form>
+                    </text>
+                }
+                else
+                {
+                    <ul>
+                        <li><a class="btn btn-danger btn-xs" href="~/Account/Register">Register</a></li>
+                        <li><a class="btn btn-danger btn-md" href="~/Account/Login">Log in</a></li>
+                    </ul>
+                }
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <p class="site-title float-left" style="color: white;">
+                        <a href="~/">Rare UpCycle</a>
+                    </p>
+            <ul class="nav navbar-nav pull-right" id="navlist">
+                <li class="active"><a href="Default.cshtml">Home</a></li>
+                <li><a href="Page2.html">Page2</a></li>
+                <li><a href="Page3.html">Page3</a></li>
+                <li><a href="Contact.cshtml">Contact</a></li>
+            </ul>
+
+        </div>
+    </nav>
+            </section>*@
+
+
+    @*<nav>
+                <ul id="menu">
+                    <li><a href="~/">Home</a></li>
+                    <li><a href="~/About">About</a></li>
+                    <li><a href="~/Contact">Contact</a></li>
+                </ul>
+            </nav>*@
+@* Took the header tag from here. *@
+<div id="body">
+    @RenderSection("featured", required: false)
+    <section class="content-wrapper main-content clear-fix">
+        @RenderBody()
+    </section>
+</div>
+<footer>
+    <div class="content-wrapper">
+        <div class="float-left">
+            <p>&copy; @DateTime.Now.Year Spire Technologies | <a href="http://spire-web.com" target="_blank">Innovate</a>
+            </p>
+        </div>
+    </div>
+</footer>
+@RenderSection("Scripts", required: false)
+</body>
+</html>
